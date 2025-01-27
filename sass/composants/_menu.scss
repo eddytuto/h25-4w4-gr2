@@ -1,0 +1,14 @@
+/* ----------------------------------------- .menu */
+.menu{ // ul
+    display : flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap : 10px 0;
+    &__li{ // li
+ 
+       a{ //a
+        text-decoration : none;
+        padding : 4px;
+       } 
+    }
+}
