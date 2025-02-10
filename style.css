@@ -99,6 +99,20 @@ Les composants
   padding: 3px;
 }
 
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carte--grande {
+  flex: 1 1 250px;
+}
+.carte__image img {
+  width: 100%;
+}
+.carte__contenu {
+  background-color: aliceblue;
+}
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */
