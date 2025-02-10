@@ -15,6 +15,11 @@
                 <img src="" alt="">
             </figure>
             <div class="entete__navigation">
+                <?php wp_nav_menu(array(
+                    'menu' => 'principal',
+                    'container' => 'nav',
+                    'container_class' => 'entete__menu'
+                )); ?>
                 <nav class="entete__menu">
                     <ul class="menu">
                         <li class="menu__li">
