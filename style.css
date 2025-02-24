@@ -148,6 +148,7 @@ Les layouts
 
 .hero {
   background-image: url("images/maldives.jpg");
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 

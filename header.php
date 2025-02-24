@@ -12,7 +12,11 @@
     <header>
         <div class="entete">
             <figure class="entete__logo">
-                <img src="" alt="">
+            <?php
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            }
+            ?>
             </figure>
             <div class="entete__navigation">
                 <?php wp_nav_menu(array(
