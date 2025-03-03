@@ -69,7 +69,7 @@ Les composants
     flex-direction: column;
   }
 }
-.menu__li a {
+.menu-item a {
   text-decoration: none;
   padding: 4px;
 }
@@ -121,6 +121,11 @@ Les layouts
   padding: 10vh 5vw;
 }
 
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
@@ -148,5 +153,37 @@ Les layouts
 
 .hero {
   background-image: url("images/maldives.jpg");
+  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(236, 136, 13);
+  color: #000;
+}
+
+.piedpage {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
 }/*# sourceMappingURL=style.css.map */
