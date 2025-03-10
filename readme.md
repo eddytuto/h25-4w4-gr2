@@ -1,5 +1,4 @@
 # TP1
-
 ## Concevoir un site Wordpress pour un club de voyage
 
 ### Auteur: Eddy Martin
