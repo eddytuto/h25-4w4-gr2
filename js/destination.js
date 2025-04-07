@@ -7,11 +7,18 @@
     const domaine = window.location.href
     const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
     console.log(apiUrl)
-function parcourrir_bouton(){
+    parcourir_bouton()
+
+function parcourir_bouton(){
     const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
+    console.log("categorie__ul__li.length = ", categorie__ul__li.length)
     categorie__ul__li.forEach(elm => {
-        
+        elm.addEventListener('mousedown', function(){
+            console.log(elm.tagName)
+            console.log("elm.dataset.category_id = " , elm.dataset.category_id)
+        })
     })
+
 }
 
 
@@ -25,7 +32,7 @@ function parcourrir_bouton(){
                 // <div>${article.excerpt.rendered}</div>
                 articleElement.innerHTML = `
                     <h3>${article.title.rendered}</h3>
-
+                    <p>${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
                 destinationList .appendChild(articleElement);

@@ -113,6 +113,20 @@ Les composants
 .carte__contenu {
   background-color: aliceblue;
 }
+/**
+bouton-categorie.scss ------------------------------ .categorie__ul
+*/
+.categorie__ul {
+  display: flex;
+  gap: 5px;
+  list-style-type: none;
+}
+.categorie__ul__li {
+  padding: 3px;
+  border: 1px solid #aaa;
+  background-color: aquamarine;
+}
+
 /* /////////////////////////////////
 Les layouts
 //////////////////////////////////// */

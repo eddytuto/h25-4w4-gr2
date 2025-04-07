@@ -1,0 +1,16 @@
+/**
+bouton-categorie.scss ------------------------------ .categorie__ul
+*/
+
+
+.categorie__ul{
+    display : flex;
+    gap: 5px;
+    list-style-type: none;
+&__li{
+    padding: 3px;
+    border: 1px solid #aaa;
+    background-color: aquamarine;
+}
+
+}
