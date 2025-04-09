@@ -1,5 +1,18 @@
 .hero{
-    background-image: url("images/maldives.jpg");
+    position : relative;
+    //background-image: url("images/maldives.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
+    
+    &__carrousel{
+       position : absolute;
+       min-height: 100vh;
+       width : 100%;
+       background-position: center;
+       z-index : -1;
+
+    }
+    &__contenu {
+        z-index : 9;
+    }
 }
