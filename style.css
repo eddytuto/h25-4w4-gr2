@@ -177,6 +177,14 @@ Les layouts
   background-position: center;
   z-index: -1;
 }
+.hero__radio {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 .hero__contenu {
   z-index: 9;
 }

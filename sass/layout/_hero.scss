@@ -10,8 +10,17 @@
        width : 100%;
        background-position: center;
        z-index : -1;
-
     }
+    &__radio {
+        position : absolute;
+        width : 100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        gap : 2rem;
+       }
+
+
     &__contenu {
         z-index : 9;
     }
