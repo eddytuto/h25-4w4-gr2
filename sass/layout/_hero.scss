@@ -10,6 +10,10 @@
        width : 100%;
        background-position: center;
        z-index : -1;
+       opacity : 0;
+       &--active { // .hero__carrousel--active
+        opacity : 1;
+       }
     }
     &__radio {
         position : absolute;

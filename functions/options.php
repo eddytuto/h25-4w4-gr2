@@ -46,10 +46,6 @@ wp_enqueue_script(
 add_action('wp_enqueue_scripts', 'theme_4w4_enqueue_styles');
 
 
-
-
-
-
 /**
 * Modifie la requete principale de WordPress avant qu'elle soit exécuté
 * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
