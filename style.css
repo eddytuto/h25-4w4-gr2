@@ -197,6 +197,25 @@ Les layouts
   z-index: 9;
 }
 
+.hero__titre, .hero__description {
+  position: relative;
+  animation: contenu linear 1s forwards;
+}
+
+.hero__titre {
+  transform: translateY(-1000px);
+}
+
+.hero__description {
+  transform: translateX(-1000px);
+  animation-delay: 1s;
+}
+
+@keyframes contenu {
+  100% {
+    transform: translate(0, 0);
+  }
+}
 /*
   --------------------------------- Layout du pied de page
 */

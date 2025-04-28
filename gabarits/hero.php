@@ -14,9 +14,10 @@
             <input  class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel">
         </div>
         <div class="hero__contenu global">
+
             <h1 class="hero__titre"><?php bloginfo('name'); ?></h1>
-            <p class="hero__description">
-            <?php bloginfo('description'); ?>
+            <p class="hero__description"><?php bloginfo('description'); ?>
+
             </p>
             <p class="hero__courriel">
             <?php bloginfo('admin_email'); ?>
