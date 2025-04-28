@@ -1,5 +1,5 @@
 <?php
-$footer_couleur = get_theme_mod('footer_couleur','#aaa');
+$footer_couleur = get_theme_mod('footer_couleur','#00a');
 genere_vague($footer_couleur);
 ?>
 <footer style="background-color: <?= $footer_couleur ?>">
