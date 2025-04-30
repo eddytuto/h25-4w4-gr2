@@ -173,12 +173,15 @@ Les layouts
   position: relative;
   background-repeat: no-repeat;
   min-height: 100vh;
+  width: 100%;
 }
 .hero__carrousel {
   position: absolute;
   min-height: 100vh;
   width: 100%;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
   opacity: 0;
 }
@@ -197,9 +200,20 @@ Les layouts
   z-index: 9;
 }
 
-.hero__titre, .hero__description {
+/**
+Animation de la section hero
+Référence https://css-tricks.com/almanac/properties/a/animation/
+
+*/
+.hero__animation {
+  display: none;
+}
+.hero__animation--active {
+  display: block;
+}
+.hero__animation--active .hero__titre, .hero__animation--active .hero__description {
   position: relative;
-  animation: contenu linear 1s forwards;
+  animation: contenu cubic-bezier(0.53, -0.8, 0.44, 1.64) 1s forwards;
 }
 
 .hero__titre {
@@ -208,7 +222,7 @@ Les layouts
 
 .hero__description {
   transform: translateX(-1000px);
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes contenu {

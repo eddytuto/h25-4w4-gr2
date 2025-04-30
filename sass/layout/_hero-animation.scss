@@ -1,16 +1,28 @@
-.hero__titre, .hero__description{
-    position : relative;
-    animation: contenu  linear 1s forwards;
-  
-    
+/**
+Animation de la section hero
+Référence https://css-tricks.com/almanac/properties/a/animation/
+
+*/
+.hero__animation{
+   display : none;
+   &--active {
+    display : block;
+    .hero__titre, .hero__description{
+        position : relative;
+        animation: contenu  cubic-bezier(.53,-0.8,.44,1.64) 1s forwards; 
+    }
+   }
 }
+
+
+
 .hero__titre{
     transform: translateY(-1000px);
 }
 
 .hero__description{
     transform: translateX(-1000px);
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 
