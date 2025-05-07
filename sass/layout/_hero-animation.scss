@@ -15,7 +15,6 @@ Référence https://css-tricks.com/almanac/properties/a/animation/
 }
 
 
-
 .hero__titre{
     transform: translateY(-1000px);
 }
@@ -27,7 +26,6 @@ Référence https://css-tricks.com/almanac/properties/a/animation/
 
 
 @keyframes contenu {
-
  100% {
     transform: translate(0,0) ;
  }    
